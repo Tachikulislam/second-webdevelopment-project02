@@ -1,32 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-@import url('https://fonts.cdnfonts.com/css/miami');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 .inter-sans-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+:root{
+    --primary-background:#222222;
+    --btn-primary:rgb(230,83,60);
+    --Inter: "Inter",san-serif;
+    --miami:'Miama', sans-serif;
 }
 .italic-title {
-    font-family: 'Miami', sans-serif;
-    font-size: 78px;
+    font-family: var(--miami, san-serif);
+    font-size: 98px;
     font-weight: 900;
     line-height: .5;
-    font-style: italic; /* This makes the text italic */
+    font-style: italic; This makes the text italic
 } 
 .inter-sans-font{
     background-color: rgb(17, 17, 17);
 }
 
-/* share style */
-
 .display-flex{
     display: flex;
 }
 
-
-/* red 02 */
 .text-gray{
     color: rgb(255, 255, 255);
 }
@@ -93,10 +95,6 @@
 }
 
 #checkbtn{
-    /* float: right; */
-    /* line-height: 80px; */
-    /* margin-right: 10px; */
-    /* margin-top: 50px; */
     font-size: 25px;
     color: white;
     display: none;
@@ -104,7 +102,6 @@
 #check{
     display: none;
 }
-
 
 /* Media Query for Mobile Devices Icon start hare */
 @media (max-width: 576px) {
@@ -141,8 +138,8 @@
         font-size: 1.5rem;
     }
 }
-/* Media Query for Mobile Devices Icon end hare */
 
+/* Media Query for Mobile Devices Icon end hare */
 .healthy-height{
     width: 520px;
     height: 282px;
@@ -161,8 +158,14 @@
     color: rgba(255, 255, 255, 0.5)
 }
 .join-now{
-    margin-right: 40px;
-}
+    width: 224px;
+    height: 54px;
+    font-size: 18px;
+    border-radius: 39px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 83, 60);
+
+} 
 
 .radious-one{
     width: 224px;
@@ -172,10 +175,9 @@
     align-items: center;
     background: rgb(230, 83, 60);
     padding: 16px 40px 16px 40px;
-
 }
+
 .radious-two{
-    
     border-radius: 42px;
     justify-content: center;
     align-items: center;
@@ -185,7 +187,6 @@
 
 .btn-primary{
     background: rgba(48, 48, 48, 0.54);
-    
     padding: 20px 25px;
     font-weight: 600;
     border-radius: 8px;
@@ -198,6 +199,7 @@
     margin-left: -100px;
     margin-top: -150px;
 }
+
 .box-two{
     margin-left: 240px;
     margin-top: -410px;
@@ -321,12 +323,14 @@
     display: flex;
     justify-content: space-around;
 }
+
 /* Bmi checker part hare */
 .bmi-header{
     text-align: center;
 }
 .bmi-size{
     color: white;
+    font-size: 48px;
 }
 
 .box-shado-bmi{
@@ -464,13 +468,14 @@ th{
 .btn-calculate{
     padding: 16px, 40px, 16px, 40px;
     background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
 }
 /* BMI Calculator section end hare */
 
 /* Meet our team part start hare */
 .team{
     text-align: center;
-    
 }
 .p-team{  
     font-size: 16px;
@@ -493,12 +498,13 @@ th{
     width: 400px;
     height: 272px;
     border-radius: 18px;
-    
 }
 
 .all-image-box-six{
     margin-bottom: -90px;
-    
+}
+.image-text{
+    margin-left: 10px;
 }
 .image-text h1{
     margin-bottom: 0;
@@ -556,7 +562,6 @@ th{
         .exprience-badge{
             margin-bottom: -650px;
         }
-        
     }
     .healthy-height{
         margin-left: 56px;
@@ -568,12 +573,10 @@ th{
     .all-main-part {
         margin-top: 1050px;
     }
-
     .your-habit {
         margin-left: 0;
         padding: 0 20px;
     }
-
     #habit {
         width: 100%;
         font-size: 32px;
@@ -608,9 +611,9 @@ th{
     }
 
     .believe {
-        width: 100%;
+        width: 100%; 
         text-align: center;
-        
+        margin-left: -50px;
     }
 }
 
@@ -637,10 +640,15 @@ th{
         width: 287px;
         height: 170px;
         border-radius: 18px;
+        object-position: 67% 27%;
     }
     .run-image{
         margin-left: -660px;
         margin-bottom: -300px;
+    }
+    .join-now{
+        margin-left: 40px;
+        width: 287px;
     }
 }
 
@@ -703,7 +711,6 @@ th{
     .p-team {
         font-size: 14px;
     }
-    
 }
 
 /* Media Query for Mobile Devices end hare*/
